@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.layer?.backgroundColor = #colorLiteral(red: 0.2117647059, green: 0.2235294118, blue: 0.2431372549, alpha: 1)
     }
 
     override var representedObject: Any? {

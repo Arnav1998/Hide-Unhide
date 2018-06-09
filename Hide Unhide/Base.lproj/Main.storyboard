@@ -764,8 +764,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-p8-Yxr">
-                                <rect key="frame" x="150" y="133" width="165" height="32"/>
-                                <buttonCell key="cell" type="push" title="Hide All Applications" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7W7-JR-NmO">
+                                <rect key="frame" x="129" y="133" width="208" height="32"/>
+                                <buttonCell key="cell" type="push" title="      Hide All Applications      " bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7W7-JR-NmO">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <string key="keyEquivalent">H</string>
@@ -775,28 +775,8 @@
                                     <action selector="hideOtherApplications:" target="rPt-NT-nkU" id="oW2-nG-1pC"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="utz-Md-EjT">
-                                <rect key="frame" x="209" y="3" width="63" height="32"/>
-                                <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="85b-x9-xX0">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent">E</string>
-                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="terminate:" target="rPt-NT-nkU" id="EMq-ah-ABx"/>
-                                </connections>
-                            </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ihx-eo-Rmc">
-                                <rect key="frame" x="167" y="221" width="146" height="29"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hide Unhide" id="unZ-bp-hgY">
-                                    <font key="font" metaFont="systemBold" size="24"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cCv-tu-sRd">
-                                <rect key="frame" x="142" y="85" width="181" height="32"/>
+                                <rect key="frame" x="129" y="85" width="208" height="32"/>
                                 <buttonCell key="cell" type="push" title="Unhide All Applications" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hc2-yJ-jWC">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -807,19 +787,42 @@
                                     <action selector="unhideAllApplications:" target="rPt-NT-nkU" id="Wyo-5K-4J7"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="utz-Md-EjT">
+                                <rect key="frame" x="44" y="3" width="393" height="32"/>
+                                <buttonCell key="cell" type="push" title="                                              Exit                                              " bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="85b-x9-xX0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent">E</string>
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="terminate:" target="rPt-NT-nkU" id="EMq-ah-ABx"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ihx-eo-Rmc">
+                                <rect key="frame" x="160" y="221" width="146" height="29"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Hide Unhide" id="unZ-bp-hgY">
+                                    <font key="font" metaFont="systemBold" size="24"/>
+                                    <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="g6z-p8-Yxr" firstAttribute="centerX" secondItem="utz-Md-EjT" secondAttribute="centerX" constant="-8" id="HuU-3J-dJA"/>
                             <constraint firstItem="g6z-p8-Yxr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cCv-tu-sRd" secondAttribute="leading" id="IOo-Qy-Hid"/>
                             <constraint firstItem="cCv-tu-sRd" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="32.5" id="Vnc-qB-cuD"/>
-                            <constraint firstItem="g6z-p8-Yxr" firstAttribute="trailing" secondItem="cCv-tu-sRd" secondAttribute="trailing" constant="-8" id="b0v-1P-HwX"/>
-                            <constraint firstItem="g6z-p8-Yxr" firstAttribute="centerX" secondItem="Ihx-eo-Rmc" secondAttribute="centerX" constant="-7.5" id="kTH-nB-hSV"/>
+                            <constraint firstItem="g6z-p8-Yxr" firstAttribute="trailing" secondItem="cCv-tu-sRd" secondAttribute="trailing" id="b0v-1P-HwX"/>
+                            <constraint firstItem="g6z-p8-Yxr" firstAttribute="centerX" secondItem="Ihx-eo-Rmc" secondAttribute="centerX" id="kTH-nB-hSV"/>
                             <constraint firstItem="g6z-p8-Yxr" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="-15.5" id="liG-bd-DDP"/>
                             <constraint firstItem="g6z-p8-Yxr" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" constant="-7.5" id="rH9-tf-1kF"/>
                             <constraint firstItem="utz-Md-EjT" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="114.5" id="ugn-LZ-tHW"/>
                             <constraint firstItem="Ihx-eo-Rmc" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="-100.5" id="vPt-Jm-ZUz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="HideButton" destination="liG-bd-DDP" id="nef-k9-DgV"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
